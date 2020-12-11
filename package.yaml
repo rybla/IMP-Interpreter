@@ -1,10 +1,9 @@
 name:                IMP-Interpreter
 version:             0.1.0.0
-github:              "githubuser/IMP-Interpreter"
+github:              "riib11/IMP-Interpreter"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2020 Author name here"
+author:              "Henry Blanchette"
+copyright:           "2020 Henry Blanchette"
 
 extra-source-files:
 - README.md
@@ -17,10 +16,14 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/IMP-Interpreter#readme>
+description: Please see the README on GitHub at <https://github.com/riib11/IMP-Interpreter#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- lens == 4.19.*
+- containers == 0.6.*
+- mtl == 2.2.*
+- transformers == 0.5.6.*
 
 library:
   source-dirs: src

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7cc05bcc4e25246a4d8b2865860b6143fca91ea2093a5b0a3ecfb9c2830a4b1d
+-- hash: 287f3b671fa8e18e35505543d0e4e4b06c6bda12dc6fa0ae56f10941e47d7db7
 
 name:           IMP-Interpreter
 version:        0.1.0.0
@@ -27,13 +27,18 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      IMP.Grammar
+      IMP.Semantics
   other-modules:
       Paths_IMP_Interpreter
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , containers ==0.6.*
+    , lens ==4.19.*
+    , mtl ==2.2.*
+    , transformers ==0.5.6.*
   default-language: Haskell2010
 
 executable IMP-Interpreter-exe
@@ -46,6 +51,10 @@ executable IMP-Interpreter-exe
   build-depends:
       IMP-Interpreter
     , base >=4.7 && <5
+    , containers ==0.6.*
+    , lens ==4.19.*
+    , mtl ==2.2.*
+    , transformers ==0.5.6.*
   default-language: Haskell2010
 
 test-suite IMP-Interpreter-test
@@ -59,4 +68,8 @@ test-suite IMP-Interpreter-test
   build-depends:
       IMP-Interpreter
     , base >=4.7 && <5
+    , containers ==0.6.*
+    , lens ==4.19.*
+    , mtl ==2.2.*
+    , transformers ==0.5.6.*
   default-language: Haskell2010
